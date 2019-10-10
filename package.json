@@ -10,16 +10,16 @@
   "dependencies": {
     "bulma": "^0.7.5",
     "core-js": "^2.6.5",
-    "vue-simple-markdown": "^1.0.9",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-simple-markdown": "^1.0.9"
   },
-  "devDependencies": {
+  "devDependencies": {    
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-plugin-eslint": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",    
+    "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"

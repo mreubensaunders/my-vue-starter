@@ -1,34 +1,62 @@
 <template>
   <div id="app">    
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Nav/>
+    <div class="container is-spaced">
+        <nav class="level">
+        <!-- Left side -->
+        <div class="level-left">
+          
+          <div class="level-item">
+            <div class="field has-addons">
+              <p class="control">
+                <input class="input" type="text" placeholder="Find a post">
+              </p>
+              <p class="control">
+                <button class="button">
+                  Search
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right side -->
+        <div class="level-right">
+          <p class="level-item"><strong>All</strong></p>
+          <p class="level-item"><a>Trending <i class="fa fa-heart"></i></a></p>          
+          <p class="level-item"><a class="button is-success">New</a></p>
+        </div>
+      </nav>
+      
+        
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Nav from './components/Nav.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Nav
   }
 }
 </script>
 
 <style>
-  /* #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif
-    -webkit-font-smoothing: antialiased
-    -moz-osx-font-smoothing: grayscale
-    text-align: center
-    color: #2c3e50
-    margin-top: 60px
-  } */
+  #app {    
+    /* font-family: 'Domine', serif; */
+
+  }
 </style>
 
 <style lang="sass">
   @charset "utf-8"
+  
+  // @import url('https://fonts.googleapis.com/css?family=Domine&display=swap')
 
+  //f22a50 <--nice pink
   // COLORS
   $primary: #00d1b2
   $info: #209CEE
@@ -56,9 +84,11 @@ export default {
   // LAYOUT
   $section-padding: 3rem 1.5rem
   $section-padding-medium: 6rem 1.5rem
-  $section-padding-large: 9rem 1.5rem
+  $section-padding-large: 9rem 1.5rem  
 
-  @import "~bulma/bulma.sass"
+  
+
+  @import "~bulma/bulma.sass"  
 </style>
 
 
